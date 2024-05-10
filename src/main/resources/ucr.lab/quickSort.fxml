@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="483.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuickSortController">
+    <children>
+        <Pane prefHeight="81.0" prefWidth="600.0" style="-fx-background-color: F18A2F;">
+            <children>
+                <Text layoutX="162.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick Sorting Algorithm">
+                    <font>
+                        <Font name="Bernard MT Condensed" size="30.0" />
+                    </font>
+                </Text>
+            </children>
+        </Pane>
+        <Pane layoutY="81.0" prefHeight="563.0" prefWidth="600.0" style="-fx-background-color: F1CA95;">
+            <children>
+                <Text layoutX="23.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No sorted array">
+                    <font>
+                        <Font name="Corbel" size="21.0" />
+                    </font>
+                </Text>
+                <TableView fx:id="tableViewNoSorted" layoutX="13.0" layoutY="52.0" prefHeight="102.0" prefWidth="575.0" />
+                <Pane layoutX="13.0" layoutY="154.0" prefHeight="222.0" prefWidth="575.0" style="-fx-background-color: #84CBC2;">
+                    <children>
+                        <Text layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quick Sorted Array">
+                            <font>
+                                <Font name="Corbel" size="21.0" />
+                            </font>
+                        </Text>
+                        <Text layoutX="14.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Low:">
+                            <font>
+                                <Font name="Corbel" size="18.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="lowTextField" layoutX="70.0" layoutY="42.0" prefHeight="36.0" prefWidth="463.0" />
+                        <Text layoutX="13.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="High:">
+                            <font>
+                                <Font name="Corbel" size="18.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="highTextField" layoutX="70.0" layoutY="84.0" prefHeight="36.0" prefWidth="463.0" />
+                        <Text layoutX="12.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pivot:">
+                            <font>
+                                <Font name="Corbel" size="18.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="pivotTextField" layoutX="70.0" layoutY="128.0" prefHeight="36.0" prefWidth="463.0" />
+                        <Text layoutX="13.0" layoutY="197.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Recursive Calls:">
+                            <font>
+                                <Font name="Corbel" size="18.0" />
+                            </font>
+                        </Text>
+                        <TextField fx:id="recursiveCallsTextField" layoutX="138.0" layoutY="173.0" prefHeight="36.0" prefWidth="83.0" />
+                    </children>
+                </Pane>
+                <TableView fx:id="tableViewSorted" layoutX="13.0" layoutY="376.0" prefHeight="102.0" prefWidth="575.0" />
+                <Button layoutX="158.0" layoutY="487.0" mnemonicParsing="false" onAction="#startOnAction" prefHeight="53.0" prefWidth="115.0" style="-fx-background-color: #84CBC2;" text="Start">
+                    <font>
+                        <Font name="Corbel Bold" size="24.0" />
+                    </font>
+                </Button>
+                <Button layoutX="291.0" layoutY="487.0" mnemonicParsing="false" onAction="#randomizeOnAction" prefHeight="53.0" prefWidth="152.0" style="-fx-background-color: #84CBC2;" text="Randomize">
+                    <font>
+                        <Font name="Corbel Bold" size="24.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
